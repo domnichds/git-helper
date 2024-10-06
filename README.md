@@ -57,3 +57,13 @@
 **Modified** - состояние, которое присваивается изменным файлам.
 
 ---
+## Схема жизненного цикла файла в git
+```mermaid
+graph LR;
+	untracked -- "git add" --> staged;
+	staged -- "git commit -m" --> tracked;
+	tracked -- "изменение файла" --> tracked & modified;
+	modified -- "git commit -m" --> tracked;
+```
+
+---
