@@ -62,7 +62,7 @@
 graph LR;
 	untracked -- "git add" --> staged;
 	staged -- "git commit -m" --> tracked;
-	tracked -- "изменение файла" --> tracked & modified;
+	tracked -- "изменение файла" --> tracked and modified;
 	modified -- "git commit -m" --> tracked;
 ```
 
